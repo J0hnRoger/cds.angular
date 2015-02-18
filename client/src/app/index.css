@@ -40,16 +40,17 @@ section.jumbotron h1 {
   font-size: 3em;
 }
 
-.techs {
-  display: flex;
-  flex-flow: row wrap;
+
+.pined-task {
+  margin:20px 50px;
+  padding:25px;
 }
 
-.techs md-card {
-  width: 30%;
+.todo-list {
+  
 }
 
-.techs md-card img.pull-right {
-  float: right;
-  width: 50px;
-}
+.wassup #do-today { display: inline;margin-left: 25px;}
+.wassup .todo-title {width: 100%;margin: 0;padding: 25px}
+.wassup #tasks-list {padding:25px;}
+.wassup .todo-list .md-tile-left {line-height: 35px}
