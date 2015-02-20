@@ -46,11 +46,21 @@ section.jumbotron h1 {
   padding:25px;
 }
 
-.todo-list {
-  
+/** CDS ANGULAR**/
+
+/** GLOBAL**/
+.cds-add-btn {float:right;}
+
+/** WASSUP **/
+
+.todo-list .md-tile-content{
 }
 
 .wassup #do-today { display: inline;margin-left: 25px;}
 .wassup .todo-title {width: 100%;margin: 0;padding: 25px}
 .wassup #tasks-list {padding:25px;}
 .wassup .todo-list .md-tile-left {line-height: 35px}
+
+.wassup .project-picker {width: 600px;height: 250px;position: relative;}
+.wassup .project {float:left;float: left; height: 33%;width: 25%;text-align: center;}
+.wassup .md-has-header {height: 300px}

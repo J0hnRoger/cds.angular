@@ -1,4 +1,4 @@
-<div layout="column" layout-fill class="wassup">
+<div class="wassup">
 
 <header ng-include="'components/navbar/navbar.html'"></header>
 
@@ -16,20 +16,23 @@
     <span>Pined Task 1</span>
   </md-whiteframe>
 </md-content>
-<md-content>
-	<div layout="column" layout-fill >
-		<md-whiteframe class="md-whiteframe-z1 todo-list" layout="row"  layout-fill>
-			<md-whiteframe flex="25" class="md-whiteframe-z1 todo-title" layout layout-align="center center">
-				Activity Inventory
-			</md-whiteframe>
-			<md-list id="tasks-list" flex="55">
-			 <md-item flex="55">
-		        <md-item-content>
-			 		<div class="md-tile-left" flex="40">
-			 			<div class="since">3 days</div>
-			 			Titre de la tâche
-			 		</div>
+
+<md-content >
+	<div layout="column">
+	 <md-toolbar class="md-theme-light">
+	    <h1 class="md-toolbar-tools">
+	      <span>Activity Inventory</span>
+	    </h1>
+	  </md-toolbar>
+	  <md-content layout="column" layout layout-fill>
+			<md-list class="todo-list">
+			 <md-item >
+		        <md-item-content  >
 			 		<div class="md-tile-content">
+			 			<div class="since">3 days</div>
+			 			Titre de la tâche Lorem ipsum dolor sit amet, Lorem ipsum dolo
+			 		</div>
+			 		<div class="md-tile-right">
 		 				<md-button class="md-fab" aria-label="Eat cake">
 		 				P
 				        </md-button>
@@ -47,13 +50,16 @@
 				        </md-button>
 						<md-checkbox type="checkbox" id="do-today"></md-checkbox>
 			 		</div>
-		        </md-item-content>
-		        <md-item-content>
-			 		<div class="md-tile-left" flex="40">
-			 			<div class="since">3 days</div>
-			 			Titre de la tâche
+		        	</md-item-content>
+	        </md-item>
+	        <md-divider></md-divider>
+	        		<md-item >
+		        	<md-item-content>
+		        	<div class="md-tile-content" >
+				 			<div class="since">3 days</div>
+				 			Titre de la tâche
 			 		</div>
-			 		<div class="md-tile-content">
+		        	<div class="md-tile-right">
 		 				<md-button class="md-fab" aria-label="Eat cake">
 		 				P
 				        </md-button>
@@ -71,37 +77,17 @@
 				        </md-button>
 						<md-checkbox type="checkbox" id="do-today"></md-checkbox>
 			 		</div>
-		        </md-item-content>
+		        	</md-item-content>
+		        </md-item>
+		        <md-divider></md-divider>
+
+		        <md-item>
 		        <md-item-content>
-			 		<div class="md-tile-left" flex="40">
+			 		<div class="md-tile-content">
 			 			<div class="since">3 days</div>
 			 			Titre de la tâche
 			 		</div>
-			 		<div class="md-tile-content">
-		 				<md-button class="md-fab" aria-label="Eat cake">
-		 				P
-				        </md-button>
-				        <md-button class="md-fab" aria-label="Eat cake">
-				        P
-				        </md-button>
-				        <md-button class="md-fab" aria-label="Eat cake">
-				        P
-				        </md-button>
-				        <md-button class="md-fab" aria-label="Eat cake">
-				        P
-				        </md-button>
-				        <md-button class="md-fab" aria-label="Eat cake">
-				        P
-				        </md-button>
-						<md-checkbox type="checkbox" id="do-today"></md-checkbox>
-			 		</div>
-		        </md-item-content>
-		        <md-item-content md-swipe-right="onSwipeRight()">
-			 		<div class="md-tile-left" flex="40">
-			 			<div class="since">3 days</div>
-			 			Titre de la tâche
-			 		</div>
-			 		<div class="md-tile-content">
+			 		<div class="md-tile-right">
 		 				<md-button class="md-fab" aria-label="Eat cake">
 		 				P
 				        </md-button>
@@ -121,9 +107,63 @@
 			 		</div>
 		        </md-item-content>
 		        </md-item>
-			</md-list>
-		</md-whiteframe>
+		        <md-divider></md-divider>
+		        <md-item>
+			        <md-item-content md-swipe-right="onSwipeRight()">
+				 		<div class="md-tile-content" >
+				 			<div class="since">3 days</div>
+				 			Titre de la tâche
+				 		</div>
+				 		<div class="md-tile-right">
+			 				<md-button class="md-fab" aria-label="Eat cake">
+			 				P
+					        </md-button>
+					        <md-button class="md-fab" aria-label="Eat cake">
+					        P
+					        </md-button>
+					        <md-button class="md-fab" aria-label="Eat cake">
+					        P
+					        </md-button>
+					        <md-button class="md-fab" aria-label="Eat cake">
+					        P
+					        </md-button>
+					        <md-button class="md-fab" aria-label="Eat cake">
+					        P
+					        </md-button>
+							<md-checkbox type="checkbox" id="do-today"></md-checkbox>
+				 		</div>
+			        </md-item-content>
+	       		</md-item>
+				</md-list>
+			</md-content>
 	</div>
 </md-content>
 
+<md-bottom-sheet class="md-has-header">
+<div class="project-picker" flex="30">
+ 	   <div class="project" style="background-color:#19b698">PMU</div>
+	   <div class="project" style="background-color:#40d47e">Sercel</div>
+	   <div class="project" style="background-color:#2cc36b">Expanscience</div>
+	   <div class="project" style="background-color:#4aa3df">Atol</div>
+	   <div class="project" style="background-color:#2e8ece">AMGCIL</div>
+	   <div class="project" style="background-color:#a66bbe">CCPA</div>
+	   <div class="project" style="background-color:#9b50ba">CDS</div>
+	   <div class="project" style="background-color:#3d566e">Expertime</div>
+	   <div class="project" style="background-color:#354b60">PCM</div>
+	   <div class="project" style="background-color:#f2ca27">Nicoll</div>
+	   <div class="project" style="background-color:#f4a62a">PMU In Extenso</div>
+	   <div class="project" style="background-color:#e98b39">Vendée Habitat</div>
+  	<span style="clear:both"></span>
+  </div>
+  <md-subheader>Qu'est-ce que je fais aujourd'hui?</md-subheader>
+  
+<md-button class="md-fab md-warn md-hue-2 cds-add-btn">+</md-button>
+  <div layout layout-sm="column" >
+  
 
+    <md-input-container flex="40">
+      <label>Titre de la tâche</label>
+      <input ng-model="user.firstName" autofocus="autofocus" placeholder="Placeholder text">
+    </md-input-container>
+  </div>
+</md-bottom-sheet>
