@@ -54,3 +54,11 @@ section.jumbotron h1 {
 .wassup .todo-title {width: 100%;margin: 0;padding: 25px}
 .wassup #tasks-list {padding:25px;}
 .wassup .todo-list .md-tile-left {line-height: 35px}
+.wassup .since {width:95px;color:white;background-color: #212121; min-width:0px;position:inherit;min-height: 24px;font-size: 12px;}
+.wassup .add-btn { background-color: #E0E0E0;color:rgb(255,64,129);font-size: 18px; border-radius: 50%;z-index: 20;width: 56px;height: 56px;}
+.wassup .md-tile-left span {text-align: center;padding: 15px;font-size: 22px}
+#todo-bottom-sheet {padding: 0px;height: 226px}
+#todo-bottom-sheet .project {text-align: center;}
+#todo-bottom-sheet .project {line-height: 45px}
+#todo-bottom-sheet .md-subheader {margin-right: 0px;}
+#todo-bottom-sheet .todo-form {padding: 10px}

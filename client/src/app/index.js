@@ -16,7 +16,8 @@ angular.module('cds',
     $routeProvider
       .when('/', {
         templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        controllerAs : 'vm'
       })
       .when('/wassup', {
         templateUrl: 'app/wassup/wassup.html',
