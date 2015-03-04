@@ -46,8 +46,14 @@ section.jumbotron h1 {
   padding:25px;
 }
 
-.todo-list {
-  
+/** CDS ANGULAR**/
+
+/** GLOBAL**/
+.cds-add-btn {float:right;}
+
+/** WASSUP **/
+
+.todo-list .md-tile-content{
 }
 
 .wassup #do-today { display: inline;margin-left: 25px;}
@@ -62,3 +68,4 @@ section.jumbotron h1 {
 #todo-bottom-sheet .project {line-height: 45px}
 #todo-bottom-sheet .md-subheader {margin-right: 0px;}
 #todo-bottom-sheet .todo-form {padding: 10px}
+
