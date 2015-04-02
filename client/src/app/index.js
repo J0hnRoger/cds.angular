@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cds', 
+angular.module('cds',
   [
      /*External Components*/
     'ngAnimate',
@@ -8,25 +8,35 @@ angular.module('cds',
     'ngTouch',
     'ngSanitize',
     'ngRoute',
-    'ngMaterial',
     /*Angular Components*/
-     'cds.wassup'
+     'cds.wassup',
+     'cds.invoices',
+     'cds.taskBumper',
+     'cds.calendar'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl',
-        controllerAs : 'vm'
-      })
-      .when('/wassup', {
         templateUrl: 'app/wassup/wassup.html',
         controller: 'WassupCtrl',
         controllerAs : 'vm'
       })
+      .when('/task-bumper', {
+        templateUrl: 'app/task-bumper/task-bumper.html',
+        controller: 'TaskBumperCtrl',
+        controllerAs : 'vm'
+      })
+      .when('/calendar', {
+        templateUrl: 'app/calendar/calendar.html',
+        controller: 'CalendarCtrl',
+        controllerAs : 'vm'
+      })
+      .when('/invoices', {
+        templateUrl: 'app/task-bumper/task-bumper.html',
+        controller: 'InvoicesCtrl',
+        controllerAs : 'vm'
+      })
       .otherwise({
-        redirectTo: '/'
-      });
+        redirectTo : '/'
+      })
   })
-;
-

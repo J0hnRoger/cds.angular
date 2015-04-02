@@ -19,7 +19,7 @@ gulp.task('partials', function () {
       quotes: true
     }))
     .pipe($.angularTemplatecache('templateCacheHtml.js', {
-      module: 'wassup'
+      module: 'cds'
     }))
     .pipe(gulp.dest(paths.tmp + '/partials/'));
 });
@@ -69,7 +69,7 @@ gulp.task('images', function () {
 
 gulp.task('fonts', function () {
   return gulp.src($.mainBowerFiles())
-    .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
+    .pipe($.filter('**/*.{eot,svg,ttf,woff,woff2}'))
     .pipe($.flatten())
     .pipe(gulp.dest(paths.dist + '/fonts/'));
 });

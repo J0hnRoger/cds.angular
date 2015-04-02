@@ -5,26 +5,15 @@
         .module('cds.wassup')
         .controller('WassupCtrl', WassupCtrl);
 
-    function WassupCtrl($mdBottomSheet) {
+    function WassupCtrl($scope, $log) {
 
         var vm = this;
         vm.todos = [];
         vm.title = 'WassupCtrl';
 
         activate();
-       
 
         function activate() {
-        	 
         }
-
-        vm.showListBottomSheet = function($event) {
-           $mdBottomSheet.show({
-              templateUrl: 'app/wassup/wassup.addTodo.html',
-              controller: 'addTodoCtrl'
-            }).then(function (todo){
-                vm.todos.push(todo);
-           });
-        };    
     }
 })();

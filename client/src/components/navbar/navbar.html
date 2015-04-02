@@ -1,8 +1,18 @@
-<md-toolbar layout="row" layout-align="center center" ng-controller="NavbarCtrl">
-
-  <md-button href="#/">Angular CDS</md-button>
-  <section flex layout="row" layout-align="left center">
-    <md-button href="#/wassup" >Wassup</md-button>
-    <md-button href="#" >Contact</md-button>
-  </section>
-</md-toolbar>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Angular CDS</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#/">Todo Today</a></li>
+      <li><a href="#/task-bumper">Task Bumper</a></li>
+      <li class="active"><a href="#/calendar">Calendar</a></li>
+      <li><a href="#/invoices">Invoices</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="sass.html">Todo Today</a></li>
+      <li><a href="components.html">Task Bumper</a></li>
+      <li><a class="active" href="javascript.html">Calendar</a></li>
+      <li><a href="mobile.html">Invoices</a></li>
+    </ul>
+  </div>
+</nav>

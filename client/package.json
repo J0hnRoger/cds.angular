@@ -1,9 +1,11 @@
 {
-  "name": "wassup",
-  "version": "0.0.0",
+  "name": "cds.angular",
+  "description" : "Module de gestion du temps passé",
+  "version": "2.0.0",
   "dependencies": {
     "express": "^4.11.2",
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "wiredep": "^2.2.2"
   },
   "devDependencies": {
     "gulp": "~3.8.10",

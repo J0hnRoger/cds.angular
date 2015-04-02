@@ -1,71 +1,38 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
+.calendar{background-color: #ececee;height: 100vh;color:#4d4d4f;}
 
-html {
-  font-family: 'Roboto Slab', serif;
-}
+.bg-calendar {background-color: white;height: 84vh;}
+div.calendar-menu.row {margin-bottom: 0;}
+.calendar-menu .month{;float:left;margin-left:20px;}
+.calendar-menu ul {float:right;margin:5px auto;}
+.calendar-menu li {display:inline-block;margin-right:20px;font-size: 2rem}
+.calendar-menu li > a {color:inherit;}
+.calendar-sheet { background-color: white;height: 84vh;overflow-y: scroll;}
+.calendar-sheet::-webkit-scrollbar {display: none;}
+.calendar .icon {float:left;margin:0 15px;}
+.marge{ border-right: 1px solid #e0e0e0; text-align: right;height: 62px;}
+.marge > .text-hour { margin: 0;height: 15px;margin-right: 5px;}
+.header .marge{height: 80px;}
+.calendar-sheet .row.hours.header{ height: 80px;}
+.calendar-sheet .row {margin-bottom: 0px;height: 62px; border-bottom: 1px solid #e0e0e0; padding: 0;}
+.calendar-sheet .row.hours.header  h4{ display:inline-block;float:left;color:#ee6e73;width: 20%;font-size: 3.3rem;}
+.calendar-sheet .row.hours.header  h6{ display:inline-block;float:left;}
+.calendar-sheet .event {margin:0 auto;height:60px;width: 100%;padding:6px;color:#FFFFFF;overflow: hidden}
 
-[layout=row] {
-  flex-direction: row;
-}
+.calendar-sheet .event.start {margin-top:2px;border-top-left-radius: 3px;border-top-right-radius: 3px;}
+.calendar-sheet .event.final {border-bottom-right-radius: 3px;border-bottom-left-radius: 3px;}
+.calendar-sheet .event.complete {height: 62px;}
+.calendar-sheet .event.less-one-hour {border-radius: 3px;}
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+.calendar-sheet .event .title {float:left;width: 75%;}
+.calendar-sheet .event .close {display: inline-block;float:right;color:white;margin:0;width: 20%;text-align: right}
+.calendar-sheet .event .time {font-size:1.2rem;float:right;}
 
-.thumbnail {
-  height: 200px;
-}
-
-.thumbnail img.pull-right {
-  width: 50px;
-}
-
-md-toolbar.md-default-theme {
-  background-color: black;
-}
-
-section.jumbotron {
-  margin-bottom: 30px;
-  padding: 1px 30px;
-  background-color: #5aadbb;
-  text-align: center;
-
-  color: white;
-}
-
-section.jumbotron h1 {
-  font-size: 3em;
-}
+/* Animation */
+.ng-enter, .ng-leave{-webkit-animation-duration: .3s;animation-fill-mode: both;}
+.animate-right.ng-enter{-webkit-animation-name: slideInRight;}
+.animate-right.ng-leave{-webkit-animation-name: slideOutLeft;}
+.animate-left.ng-enter{-webkit-animation-name: slideInLeft;}
+.animate-left.ng-enter{-webkit-animation-name: slideInLeft;}
 
 
-.pined-task {
-  margin:20px 50px;
-  padding:25px;
-}
-
-/** CDS ANGULAR**/
-
-/** GLOBAL**/
-.cds-add-btn {float:right;}
-
-/** WASSUP **/
-
-.todo-list .md-tile-content{
-}
-
-.wassup #do-today { display: inline;margin-left: 25px;}
-.wassup .todo-title {width: 100%;margin: 0;padding: 25px}
-.wassup #tasks-list {padding:25px;}
-.wassup .todo-list .md-tile-left {line-height: 35px}
-.wassup .since {width:95px;color:white;background-color: #212121; min-width:0px;position:inherit;min-height: 24px;font-size: 12px;}
-.wassup .add-btn { background-color: #E0E0E0;color:rgb(255,64,129);font-size: 18px; border-radius: 50%;z-index: 20;width: 56px;height: 56px;}
-.wassup .md-tile-left span {text-align: center;padding: 15px;font-size: 22px}
-#todo-bottom-sheet {padding: 0px;height: 226px}
-#todo-bottom-sheet .project {text-align: center;}
-#todo-bottom-sheet .project {line-height: 45px}
-#todo-bottom-sheet .md-subheader {margin-right: 0px;}
-#todo-bottom-sheet .todo-form {padding: 10px}
-
+/**/
