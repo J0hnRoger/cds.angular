@@ -8,12 +8,14 @@ angular.module('cds',
     'ngTouch',
     'ngSanitize',
     'ngRoute',
+    'firebase',
     /*Angular Components*/
      'cds.wassup',
      'cds.invoices',
      'cds.taskBumper',
      'cds.calendar'
   ])
+  .constant('FireBaseRoot', 'https://dazzling-inferno-3649.firebaseio.com/')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
