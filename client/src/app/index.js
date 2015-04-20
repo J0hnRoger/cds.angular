@@ -16,6 +16,7 @@ angular.module('cds',
      'cds.calendar',
      'cds.wassup'
   ])
+  .constant('FireBaseRoot', 'https://dazzling-inferno-3649.firebaseio.com/')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -34,9 +35,13 @@ angular.module('cds',
         controllerAs : 'vm'
       })
       .when('/invoices', {
-        templateUrl: 'app/task-bumper/task-bumper.html',
+        templateUrl: 'app/invoices/invoices.html',
         controller: 'InvoicesCtrl',
         controllerAs : 'vm'
+      })
+      .when('/test', {
+        templateUrl: 'app/main/main.html',
+        controller: 'MainCtrl'
       })
       .otherwise({
         redirectTo : '/'

@@ -1,1 +1,71 @@
-<h1>{{vm.title}}</h1>
+<div class="invoices row">
+    <div class="projects col s8 " >
+      <div class="projects-header light-blue lighten-1">
+        <div class="row ">
+          <input type="date" class="datepicker col s2" >
+        </div>
+        <div class="subtitle row">
+          <h2>Facturation du mois courant</h2>
+        </div>
+      </div>
+      <table>
+        <thead>
+        <tr>
+          <th data-field="id">Projet</th>
+          <th data-field="name">Corrections</th>
+          <th data-field="price">Evolutions</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr class="active">
+          <td>Sercel</td>
+          <td>2</td>
+          <td>0.8</td>
+        </tr>
+        <tr>
+          <td>PMU</td>
+          <td>1</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Expanscience</td>
+          <td>0</td>
+          <td>6</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>3</td>
+          <td>9.8</td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="project-details col s4">
+      <div class="project-details-header light-blue darken-1">
+        <h2>Sercel</h2>
+        <img class="bg-project" src="" alt=""/>
+      </div>
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="mdi-image-filter-drama"></i>First</div>
+          <div class="collapsible-body">
+            <h3>T28 - Archivage automatique </h3>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-maps-place"></i>Second</div>
+          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-social-whatshot"></i>Third</div>
+          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+      </ul>
+      <div class="fixed-action-btn" style="bottom: 45px; right: 54px;">
+        <a class="tooltipped btn-floating btn-large waves-effect waves-light right blue" data-position="top" data-delay="50" data-tooltip="Télécharger le SLA"><i class="mdi-file-file-download"></i></a>
+      </div>
+    </div>
+</div>

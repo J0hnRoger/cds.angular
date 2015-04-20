@@ -1,7 +1,16 @@
 'use strict';
 
 angular.module('cds')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, TasksFactory, FireBaseRoot) {
+    var ref = new Firebase("https://dazzling-inferno-3649.firebaseio.com");
+    var factory = new TasksFactory(ref.child("tasks").child("2015").child("4").child("20").child("tasks"));
+
+    factory.$loaded().then(function (data){
+      debugger
+    });
+
+    $scope.tasks = factory;
+
     $scope.awesomeThings = [
       {
         'title': 'AngularJS',

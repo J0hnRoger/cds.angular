@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('cds.wassup')
+        .module('cds.wassup', [])
         .controller('WassupCtrl', WassupCtrl);
 
     function WassupCtrl($scope, $log, $mdBottomSheet) {

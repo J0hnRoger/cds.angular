@@ -1,12 +1,6 @@
 <div layout="vertical" layout-fill>
 
-  <header ng-include="'components/navbar/navbar.html'"></header>
-
- <div ng-view></div>
-
-  <footer>
-    <md-toolbar layout="row" layout-align="center center">
-      <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
-    </md-toolbar>
-  </footer>
+  <li ng-repeat="task in tasks">
+    {{ task }}
+  </li>
 </div>
