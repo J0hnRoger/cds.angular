@@ -2,31 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb10dbd-5d67-456e-a915-f67138a5da6c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/core/collapsible.directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/core/datepicker.directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/core/project.model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/core/tasks.factory.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/core/tooltiped.directive.js" />
-      <change type="DELETED" beforePath="D:\Dev\cds.angular\client\src\app\calendar\calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dev\cds.angular\client\src\app\invoices\invoices.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dev\cds.angular\client\src\app\task-bumper\task-bumper.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dev\cds.angular\client\src\app\wassup\wassup.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/calendar/calendar.controller.js" afterPath="$PROJECT_DIR$/client/src/app/calendar/calendar.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/index.css" afterPath="$PROJECT_DIR$/client/src/app/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/index.html" afterPath="$PROJECT_DIR$/client/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/index.js" afterPath="$PROJECT_DIR$/client/src/app/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/invoices/invoices.controller.js" afterPath="$PROJECT_DIR$/client/src/app/invoices/invoices.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/invoices/invoices.html" afterPath="$PROJECT_DIR$/client/src/app/invoices/invoices.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/karma.conf.js" afterPath="$PROJECT_DIR$/client/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/main/main.controller.js" afterPath="$PROJECT_DIR$/client/src/app/main/main.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/main/main.html" afterPath="$PROJECT_DIR$/client/src/app/main/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/navbar/navbar.controller.js" afterPath="$PROJECT_DIR$/client/src/components/navbar/navbar.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/navbar/navbar.html" afterPath="$PROJECT_DIR$/client/src/components/navbar/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/package.json" afterPath="$PROJECT_DIR$/client/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/task-bumper/task-bumper.controller.js" afterPath="$PROJECT_DIR$/client/src/app/task-bumper/task-bumper.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/core/task.model.js" afterPath="$PROJECT_DIR$/client/src/app/core/task.model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/core/tasks.factory.js" afterPath="$PROJECT_DIR$/client/src/app/core/tasks.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/wassup/wassup.controller.js" afterPath="$PROJECT_DIR$/client/src/app/wassup/wassup.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cds.angular.iws" />
@@ -106,8 +81,8 @@
           <file leaf-file-name="task.model.spec.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/app/core/task.model.spec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.08629441" vertical-offset="0" max-vertical-offset="591">
-                  <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+                <state vertical-scroll-proportion="0.3445946" vertical-offset="0" max-vertical-offset="592">
+                  <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -140,7 +115,7 @@
           <file leaf-file-name="tasks.factory.spec.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/app/core/tasks.factory.spec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8235294" vertical-offset="0" max-vertical-offset="697">
+                <state vertical-scroll-proportion="0.8221071" vertical-offset="0" max-vertical-offset="697">
                   <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="25" />
                   <folding />
                 </state>
@@ -448,14 +423,21 @@
       <option name="number" value="Default" />
       <updated>1428014331338</updated>
     </task>
+    <task id="LOCAL-00001" summary="Design Invoices + Task Models">
+      <created>1429546419528</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1429546419528</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3300866" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3300866" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26918918" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -835,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/core/tasks.factory.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8235294" vertical-offset="0" max-vertical-offset="697">
+        <state vertical-scroll-proportion="0.8221071" vertical-offset="0" max-vertical-offset="697">
           <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="25" />
           <folding />
         </state>
@@ -859,8 +841,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/core/task.model.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08629441" vertical-offset="0" max-vertical-offset="591">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.3445946" vertical-offset="0" max-vertical-offset="592">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
