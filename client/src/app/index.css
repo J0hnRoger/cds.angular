@@ -1,3 +1,7 @@
+/** General**/
+body {height: 100%;overflow: hidden;}
+nav { position: relative; }
+
 .calendar{background-color: #ececee;height: 100vh;color:#4d4d4f;}
 
 .bg-calendar {background-color: white;height: 84vh;}
@@ -33,6 +37,24 @@ div.calendar-menu.row {margin-bottom: 0;}
 .animate-right.ng-leave{-webkit-animation-name: slideOutLeft;}
 .animate-left.ng-enter{-webkit-animation-name: slideInLeft;}
 .animate-left.ng-enter{-webkit-animation-name: slideInLeft;}
+.animate-right {height: 100%;}
+/* Invoices */
 
+nav.invoices-background { background-color: #0288d1;}
 
-/**/
+.invoices {margin-bottom: 0px;height: 100%}
+.invoices .projects{padding:0;}
+.invoices .projects-header {height: 20vh; color:white;padding:10px}
+.invoices h2{font-weight: 300;}
+.invoices .project-details{padding:0;
+  height: 100%;}
+.invoices .project-details .collapsible{margin:0;box-shadow: none;}
+
+.invoices .project-details-header {height: 20vh;margin:0;color:white;padding:10px}
+.invoices .project-details-header h2 {float:left;}
+
+.projects tfoot {font-weight: bold}
+.projects tr {cursor:pointer;}
+.projects { height: 100%; border-right: 1px solid #ddd;}
+.projects tr.active { background-color: #c8ebfb !important;}
+

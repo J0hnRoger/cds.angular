@@ -3,18 +3,14 @@
 
   angular
     .module('cds')
-    .factory('Task', _task);
+    .factory('Project', _project);
 
-  function _task(FireBaseRoot, $firebaseArray) {
-    var ref = new Firebase(FireBaseRoot+ '/test/');
-    var TasksNode = "tasks";
+  function _project(FireBaseRoot, $firebaseArray) {
 
-    function Task(snap){
-        this.ID = snap.key();
-        this.StartDate = new Date(snap.val().startDate);
-        this.Year = this.StartDate.getFullYear();
-        this.Month = this.StartDate.getMonth() + 1;
-        this.Day = this.StartDate.getDate();
+    function Project(snap){
+      this.ID = snap.key();
+      this.Color = snap.val().color;
+      this.Title = snap.val().title;
     }
 
     //////////////////////////////////

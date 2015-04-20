@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('cds.taskBumper')
+        .module('cds.taskBumper', [])
         .controller('TaskBumperCtrl', taskBumperCtrl);
 
     /* @ngInject */
