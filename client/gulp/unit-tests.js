@@ -3,12 +3,12 @@
 var gulp = require('gulp');
 
 var $ = require('gulp-load-plugins')();
-
 var wiredep = require('wiredep');
 
 var paths = gulp.paths;
 
 function runTests (singleRun, done) {
+
   var bowerDeps = wiredep({
     directory: 'bower_components',
     exclude: ['bootstrap-sass-official'],
@@ -17,7 +17,7 @@ function runTests (singleRun, done) {
   });
 
   var testFiles = bowerDeps.js.concat([
-    paths.src + '/{app,components}/**/*.js'
+     paths.src + '/{app,components}/**/*.js'
   ]);
 
   gulp.src(testFiles)

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('cds.calendar')
+        .module('cds.calendar', [])
         .controller('CalendarCtrl', CalendarCtrl);
 
     function CalendarCtrl() {

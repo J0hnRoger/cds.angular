@@ -1,11 +1,11 @@
 {
   "name": "cds.angular",
-  "description" : "Module de gestion du temps passé",
+  "description": "Module de gestion du temps passé",
   "version": "2.0.0",
   "dependencies": {
-    "express": "^4.11.2",
-    "gulp": "^3.8.11",
-    "wiredep": "^2.2.2"
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma": "^0.12.31",
+    "gulp-karma": "0.0.4"
   },
   "devDependencies": {
     "gulp": "~3.8.10",
@@ -29,7 +29,6 @@
     "gulp-minify-html": "~0.1.7",
     "gulp-inject": "~1.0.2",
     "gulp-protractor": "~0.0.11",
-    "gulp-karma": "~0.0.4",
     "gulp-angular-filesort": "~1.0.4",
     "main-bower-files": "~2.4.0",
     "jshint-stylish": "~1.0.0",

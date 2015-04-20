@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('cds.invoices')
+        .module('cds.invoices', [])
         .controller('InvoicesCtrl', InvoicesCtrl);
 
     function InvoicesCtrl() {

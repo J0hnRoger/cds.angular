@@ -1,5 +1,4 @@
-.calendar{background-color: #ececee;height: 100vh;color:#4d4d4f;}
-
+.calendar{height: 100vh;color:#4d4d4f;}
 .bg-calendar {background-color: white;height: 84vh;}
 div.calendar-menu.row {margin-bottom: 0;}
 .calendar-menu .month{;float:left;margin-left:20px;}
@@ -34,5 +33,34 @@ div.calendar-menu.row {margin-bottom: 0;}
 .animate-left.ng-enter{-webkit-animation-name: slideInLeft;}
 .animate-left.ng-enter{-webkit-animation-name: slideInLeft;}
 
+/*Wassup*/
+.wrap nav {position:relative; z-index:1;}
+.wrap{height:100vh;overflow: hidden;}
+.wassup-header{
+  -webkit-background-size: cover;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #f3989b;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  display: block;
+  font-family: Roboto, sans-serif;
+  min-height: 380px;
+}
 
-/**/
+.wassup .container {margin-top: -35vh;}
+.wassup .collection.with-header .collection-item {padding-left: 72px}
+.wassup .container .collection-header {color:#bebebe;font-weight:700;margin:0;background-color: #fff;}
+.wassup .container .collection {
+  background-color: #fff;
+  height: 57.5vh;
+  overflow-y: auto;
+}
+
+.wassup .project-avatar {
+  text-align: center;line-height: 42px;font-size:1.5rem;color:#ffffff;
+}
+
+.project-picker .row {margin:0;}
+.project-picker .col {margin:0; height: 100%;}
+

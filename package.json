@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/J0hnRoger/cds.angular/issues"
   },
-  "homepage": "https://github.com/J0hnRoger/cds.angular"
+  "homepage": "https://github.com/J0hnRoger/cds.angular",
+  "dependencies": {
+    "angularfire": "^1.0.0"
+  }
 }

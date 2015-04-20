@@ -8,11 +8,13 @@ angular.module('cds',
     'ngTouch',
     'ngSanitize',
     'ngRoute',
+    'ngMaterial',
+    'firebase',
     /*Angular Components*/
-     'cds.wassup',
      'cds.invoices',
      'cds.taskBumper',
-     'cds.calendar'
+     'cds.calendar',
+     'cds.wassup'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -39,4 +41,4 @@ angular.module('cds',
       .otherwise({
         redirectTo : '/'
       })
-  })
+  });
