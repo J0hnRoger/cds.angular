@@ -2,34 +2,34 @@
 body {height: 100%;overflow: hidden;}
 nav { position: relative; }
 
-.calendar{background-color: #ececee;height: 100vh;color:#4d4d4f;}
 
 .bg-calendar {background-color: white;height: 84vh;}
-div.calendar-menu.row {margin-bottom: 0;}
-.calendar-menu .month{;float:left;margin-left:20px;}
-.calendar-menu ul {float:right;margin:5px auto;}
-.calendar-menu li {display:inline-block;margin-right:20px;font-size: 2rem}
-.calendar-menu li > a {color:inherit;}
-.calendar-sheet { background-color: white;height: 84vh;overflow-y: scroll;}
-.calendar-sheet::-webkit-scrollbar {display: none;}
+div.cds-menu.row {margin-bottom: 0;}
+.cds-menu .month{;float:left;margin-left:20px;}
+.cds-menu ul {float:right;margin:5px auto;}
+.cds-menu li {display:inline-block;margin-right:20px;font-size: 2rem}
+.cds-menu li > a {color:inherit;}
+.content { background-color: white;height: 84vh;}
+.content .calendar {background-color: #fff;}
+.content::-webkit-scrollbar {display: none;}
 .calendar .icon {float:left;margin:0 15px;}
 .marge{ border-right: 1px solid #e0e0e0; text-align: right;height: 62px;}
 .marge > .text-hour { margin: 0;height: 15px;margin-right: 5px;}
 .header .marge{height: 80px;}
-.calendar-sheet .row.hours.header{ height: 80px;}
-.calendar-sheet .row {margin-bottom: 0px;height: 62px; border-bottom: 1px solid #e0e0e0; padding: 0;}
-.calendar-sheet .row.hours.header  h4{ display:inline-block;float:left;color:#ee6e73;width: 20%;font-size: 3.3rem;}
-.calendar-sheet .row.hours.header  h6{ display:inline-block;float:left;}
-.calendar-sheet .event {margin:0 auto;height:60px;width: 100%;padding:6px;color:#FFFFFF;overflow: hidden}
+.content .row.hours.header{ height: 80px;}
+.content .row {margin-bottom: 0px;height: 62px; border-bottom: 1px solid #e0e0e0; padding: 0;}
+.content .row.hours.header  h4{ display:inline-block;float:left;color:#ee6e73;width: 20%;font-size: 3.3rem;}
+.content .row.hours.header  h6{ display:inline-block;float:left;}
+.content .event {margin:0 auto;height:60px;width: 100%;padding:6px;color:#FFFFFF;overflow: hidden}
 
-.calendar-sheet .event.start {margin-top:2px;border-top-left-radius: 3px;border-top-right-radius: 3px;}
-.calendar-sheet .event.final {border-bottom-right-radius: 3px;border-bottom-left-radius: 3px;}
-.calendar-sheet .event.complete {height: 62px;}
-.calendar-sheet .event.less-one-hour {border-radius: 3px;}
+.content .event.start {margin-top:2px;border-top-left-radius: 3px;border-top-right-radius: 3px;}
+.content .event.final {border-bottom-right-radius: 3px;border-bottom-left-radius: 3px;}
+.content .event.complete {height: 62px;}
+.content .event.less-one-hour {border-radius: 3px;}
 
-.calendar-sheet .event .title {float:left;width: 75%;}
-.calendar-sheet .event .close {display: inline-block;float:right;color:white;margin:0;width: 20%;text-align: right}
-.calendar-sheet .event .time {font-size:1.2rem;float:right;}
+.content .event .title {float:left;width: 75%;}
+.content .event .close {display: inline-block;float:right;color:white;margin:0;width: 20%;text-align: right}
+.content .event .time {font-size:1.2rem;float:right;}
 
 /* Animation */
 .ng-enter, .ng-leave{-webkit-animation-duration: .3s;animation-fill-mode: both;}
@@ -40,9 +40,8 @@ div.calendar-menu.row {margin-bottom: 0;}
 .animate-right {height: 100%;}
 /* Invoices */
 
-nav.invoices-background { background-color: #0288d1;}
-
-.invoices {margin-bottom: 0px;height: 100%}
+.invoices {margin-bottom: 0px;height: 100vh;
+  background-color:#ececee ; color:#4d4d4f;}
 .invoices .projects{padding:0;}
 .invoices .projects-header {height: 20vh; color:white;padding:10px}
 .invoices h2{font-weight: 300;}
@@ -58,25 +57,31 @@ nav.invoices-background { background-color: #0288d1;}
 .projects tr.active { background-color: #c8ebfb !important;}
 
 /*Wassup*/
-.wrap nav {position:relative; z-index:1;}
-.wrap{height:100vh;overflow: hidden;}
-.wassup-header{ -webkit-background-size: cover;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-color: #f3989b;
-  box-sizing: border-box;
-  color: rgb(255, 255, 255);
-  display: block;
-  font-family: Roboto, sans-serif;
-  min-height: 380px;
-}
+.wassup .badge {  font-weight: 300;font-size: 1rem;position: inherit;color: #fff;border-radius: 2px;}
 
-.wassup .container {margin-top: -35vh;}
-.wassup .collection.with-header .collection-item {padding-left: 72px}
-.wassup .container .collection-header {color:#bebebe;font-weight:700;margin:0;background-color: #fff;}
-.wassup .container .collection {background-color: #fff; height: 57.5vh;overflow-y: auto;}
-.wassup .project-avatar { text-align: center;line-height: 42px;font-size:1.5rem;color:#ffffff;}
-.project-picker .row {margin:0;}
-.project-picker .col {margin:0; height: 100%;}
+.wassup .todo-banner { background-image: url("../assets/images/todo-background.jpg");background-position: bottom;min-height: 15vh;color : #ffffff;}
+.wassup .todo-banner h2{ margin:0;}
+.wassup .todo-banner ul {float:left;margin:5px auto;width: 100%;}
+.wassup .todo-banner li{display:inline-block;margin:0 10%;font-size: 2rem }
+.wassup .wassup-container {height: 82%;}
+.wassup .pomodoros i.active {color:#ef5350;}
 
+.wassup .todo-today-container {;padding: 0;height: 100%;overflow: auto}
+.wassup .todo-today-container .feed-me {color:#e0e0e0;text-align: center;font-size: 2em }
+.wassup .todo-today {padding: 0;margin:0;}
+.wassup .todo-today .pomodoros {float:right;margin-top: 10px}
+.wassup .todo-today .ok {background-color: #cedd37;color:white;text-align: center;line-height: 1;height: 100%}
+.wassup .todo-today .todo-content {padding:10px;text-align: center;font-size: 1.3em;}
+.wassup .todo-today .collection-item{ padding:0px 0px;height: 80px}
 
+.wassup .activity-inventory .collection-item{ padding:0px 0px;height: 80px}
+.wassup .activity-inventory .ok {background-color: #ef5350 ;color:white;text-align: center;line-height: 1;height: 100%;float: right;}
+
+.wassup .activity-inventory .input-field {margin-top: 20px;}
+.wassup .activity-inventory .input-field i{ line-height: 2}
+.wassup .activity-inventory .pomodoros{margin-top: 25px;text-align: center;}
+
+.wassup .activity-inventory .edit .pomodoros{text-align: center;}
+.wassup .activity-inventory .todo-content { height: 100%;}
+.wassup .activity-inventory .badge-container { height: 100%;}
+.wassup .activity-inventory .todo-item-title {height: 100%;}

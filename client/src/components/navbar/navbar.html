@@ -12,7 +12,7 @@
     <ul class="side-nav" id="mobile-demo">
       <li><a href="sass.html">Todo Today</a></li>
       <li><a href="components.html">Task Bumper</a></li>
-      <li><a class="active" href="javascript.html">Calendar</a></li>
+      <li><a ng-class="{ active : this.selected }" ng-click href="javascript.html">Calendar</a></li>
       <li><a href="mobile.html">Invoices</a></li>
     </ul>
   </div>
